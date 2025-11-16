@@ -7,12 +7,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
 // Generate a list of placeholder images for the portfolio
-const portfolioImages = Array.from({ length: 8 }, (_, i) => ({
-  id: i,
-  src: `https://picsum.photos/seed/${i + 1}/600/400`,
-  alt: `Portfolio item ${i + 1}`,
-}));
-
+const portfolioImages = [
+  { id: 0, src: "/portfolio/mini1.jpg", alt: "Miniature YouTube 1" },
+  { id: 1, src: "/portfolio/mini2.jpg", alt: "Miniature YouTube 2" },
+  { id: 2, src: "/portfolio/mini3.jpg", alt: "Miniature YouTube 3" },
+  { id: 3, src: "/portfolio/mini4.jpg", alt: "Miniature YouTube 4" },
+  { id: 4, src: "/portfolio/mini5.jpg", alt: "Miniature YouTube 5" },
+  { id: 5, src: "/portfolio/mini6.jpg", alt: "Miniature YouTube 6" },
+  { id: 6, src: "/portfolio/mini7.jpg", alt: "Miniature YouTube 7" },
+  { id: 7, src: "/portfolio/mini8.jpg", alt: "Miniature YouTube 8" },
+];
 const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
